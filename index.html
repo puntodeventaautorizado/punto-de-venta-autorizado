@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Punto de Venta Autorizado | Parques, experiencias, alojamiento y viajes</title>
+<meta name="description" content="Punto de Venta Autorizado para comprar y cotizar entradas a parques y experiencias del Eje Cafetero y Colombia, además de alojamiento y viajes.">
+<meta name="theme-color" content="#0b2119">
+<meta property="og:title" content="Punto de Venta Autorizado | Tu destino comienza en un solo lugar">
+<meta property="og:description" content="Parques, termales, experiencias, alojamiento y viajes. Información clara y atención por WhatsApp.">
+<meta property="og:image" content="assets/hero-cascada.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10251d;--muted:#617068;--cream:#f6f3ec;--white:#fff;--line:#e7e5de;--accent:#d6a64f;--deep:#0a1d16;--radius:22px}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.55} a{color:inherit;text-decoration:none} img{display:block;width:100%;height:100%;object-fit:cover} .container{width:min(1160px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(10,29,22,.88);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)} nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand-stack{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;width:min(275px,38vw);height:62px;opacity:.92}.brand-stack img{display:block;height:auto;object-fit:contain;object-position:left center}.brand-logo{width:100%;max-height:34px}.brand-slogan{width:82%;max-height:22px;opacity:.92}.navlinks{display:flex;gap:25px;font-size:13px;color:#e8eee9}.navlinks a:hover{color:#fff}.navcta{padding:10px 15px;border:1px solid rgba(255,255,255,.25);border-radius:999px}
+.hero{min-height:760px;padding-top:76px;display:grid;align-items:end;position:relative;background:var(--deep);overflow:hidden} .hero-media{position:absolute;inset:0} .hero-media img{object-position:center 62%} .hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,20,14,.84) 0%,rgba(5,20,14,.45) 48%,rgba(5,20,14,.18) 100%),linear-gradient(0deg,rgba(5,20,14,.82) 0%,transparent 55%)} .hero-content{position:relative;color:#fff;padding:130px 0 90px;max-width:780px} .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#ead39e;font-weight:700} h1{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,88px);line-height:.98;margin:16px 0 24px;letter-spacing:-.035em} .hero p{font-size:19px;max-width:650px;color:#e7eee9} .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px} .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:999px;background:#fff;color:var(--deep);font-weight:700;font-size:14px;border:1px solid transparent} .btn.gold{background:var(--accent);color:#1d180e} .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)} .btn-small{margin-top:18px;background:var(--deep);color:#fff;padding:12px 16px;font-size:13px}
+.trust{background:#fff;border-bottom:1px solid var(--line)} .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)} .trust-item{background:#fff;padding:24px 20px} .trust-item strong{display:block;font-size:15px;margin-bottom:5px} .trust-item span{font-size:13px;color:var(--muted)}
+section{padding:88px 0} .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px} .section-head h2{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,54px);line-height:1;margin:0;letter-spacing:-.03em} .section-head p{max-width:520px;color:var(--muted);margin:0} .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:#9a7130}
+.feature{background:#0c241a;color:#fff} .feature-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center} .feature-photo{height:560px;border-radius:28px;overflow:hidden} .feature h2{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,62px);line-height:1;margin:12px 0 18px} .feature p{color:#d7e1db} .pill-row{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0} .pill{border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 12px;font-size:12px;color:#e7eee9}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px} .filter{border:1px solid var(--line);background:#fff;padding:10px 15px;border-radius:999px;cursor:pointer;font:inherit;color:var(--ink)} .filter.active,.filter:hover{background:var(--deep);color:#fff;border-color:var(--deep)} .dest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px} .dest-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 35px rgba(15,37,29,.05)} .dest-img{height:245px;position:relative} .badge{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.94);color:var(--deep);padding:7px 10px;border-radius:999px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em} .dest-body{padding:22px} .dest-body h3{font-family:'Playfair Display',serif;font-size:29px;line-height:1.05;margin:5px 0 12px} .dest-body>p{color:var(--muted);font-size:14px} .mini{display:grid;gap:5px;margin:18px 0;color:#4c5c54;font-size:12px} details{border-top:1px solid var(--line);padding-top:13px} summary{cursor:pointer;font-weight:700;font-size:13px} .details h4{font-size:12px;margin:18px 0 5px;text-transform:uppercase;letter-spacing:.08em} .details p{font-size:13px;color:var(--muted);margin:0} .note{margin-top:15px!important;font-size:11px!important;font-style:italic}
+.process{background:#fff} .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px} .process-card{padding:25px;border:1px solid var(--line);border-radius:20px} .num{font-family:'Playfair Display',serif;font-size:38px;color:#b78b3e} .process-card h3{margin:5px 0 8px} .process-card p{color:var(--muted);font-size:13px}
+.why{background:#e9eee9} .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px} .why-card{background:#fff;padding:28px;border-radius:20px} .why-card h3{margin:0 0 8px} .why-card p{color:var(--muted);font-size:14px}
+.cta{padding:95px 0;background:linear-gradient(120deg,#0a1d16,#173c2c);color:#fff} .cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px} .cta h2{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,62px);margin:0;line-height:1} .cta p{color:#d8e2dc;max-width:590px}
+footer{background:#07150f;color:#cbd6d0;padding:40px 0} .footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap} footer small{color:#8da097} .wa-float{position:fixed;right:20px;bottom:20px;z-index:30;background:#1b8c4a;color:#fff;border-radius:999px;padding:14px 18px;font-weight:800;font-size:13px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+@media(max-width:900px){.navlinks{display:none}.trust-grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:1fr}.feature-photo{height:420px}.dest-grid{grid-template-columns:repeat(2,1fr)}.process-grid,.why-grid{grid-template-columns:repeat(2,1fr)}.cta-inner{flex-direction:column;align-items:flex-start}}
+@media(max-width:620px){nav{height:68px}.brand-stack{width:215px;height:54px;gap:2px}.brand-logo{max-height:29px}.brand-slogan{width:78%;max-height:19px}.hero{min-height:700px;padding-top:68px}.hero-content{padding:100px 0 60px}.hero p{font-size:16px}section{padding:65px 0}.trust-grid,.dest-grid,.process-grid,.why-grid{grid-template-columns:1fr}.dest-img{height:220px}.feature-photo{height:320px}.wa-float{right:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav><a class="brand-stack" href="#inicio" aria-label="Punto de Venta Autorizado"><img class="brand-logo" src="assets/pva-logo.png" alt="Punto de Venta Autorizado"><img class="brand-slogan" src="assets/pva-slogan.png" alt="Tu destino comienza en un solo lugar."></a><div class="navlinks"><a href="#destinos">Destinos</a><a href="#como-funciona">Cómo funciona</a><a href="#confianza">Confianza</a><a class="navcta" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20INFORMACION%20GENERAL" target="_blank">Cotizar</a></div></nav></div></header>
+<main id="inicio">
+<section class="hero"><div class="hero-media"><img src="assets/hero-cascada.webp" alt="Cascada Santa Elena en Termales Santa Rosa de Cabal"></div><div class="container"><div class="hero-content"><div class="kicker">Parques · Experiencias · Alojamiento · Viajes</div><h1>Tu destino comienza en un solo lugar.</h1><p>Encuentra experiencias turísticas en Colombia, entiende exactamente qué estás comprando y recibe atención para elegir la opción que mejor se adapta a tu viaje.</p><div class="actions"><a class="btn gold" href="#destinos">Explorar destinos</a><a class="btn ghost" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20INFORMACION%20GENERAL" target="_blank">Hablar por WhatsApp</a></div></div></div></section>
+<div class="trust"><div class="container trust-grid"><div class="trust-item"><strong>Información clara</strong><span>Qué incluye, qué no incluye y condiciones.</span></div><div class="trust-item"><strong>Atención humana</strong><span>Resuelve tus dudas antes de comprar.</span></div><div class="trust-item"><strong>Punto de venta autorizado</strong><span>Un proceso pensado para comprar con confianza.</span></div><div class="trust-item"><strong>Recomendación</strong><span>Te ayudamos a elegir según tu grupo.</span></div></div></div>
+<section class="feature"><div class="container feature-grid"><div class="feature-photo"><img src="assets/termales-santa-rosa-1.webp" alt="Termales Santa Rosa de Cabal"></div><div><div class="kicker">Destino destacado</div><h2>Termales Santa Rosa de Cabal</h2><p>Uno de nuestros destinos especializados: aguas termales, naturaleza, cascadas, descanso y opciones de alojamiento para convertir una visita en una escapada completa.</p><div class="pill-row"><span class="pill">♨️ Aguas termales</span><span class="pill">💦 Cascadas</span><span class="pill">🌿 Naturaleza</span><span class="pill">🏨 Alojamiento</span></div><a class="btn gold" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20TERMALES%20SANTA%20ROSA%20DE%20CABAL" target="_blank">Cotizar Termales Santa Rosa</a></div></div></section>
+<section id="destinos"><div class="container"><div class="section-head"><div><div class="eyebrow">Catálogo de experiencias</div><h2>Elige cómo quieres vivir Colombia.</h2></div><p>Destinos seleccionados para familias, parejas, grupos y viajeros que buscan claridad antes de reservar.</p></div><div class="filters"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="termales">Termales</button><button class="filter" data-filter="parques">Parques</button><button class="filter" data-filter="cultura">Cultura & café</button><button class="filter" data-filter="naturaleza">Naturaleza</button><button class="filter" data-filter="aventura">Aventura</button></div><div class="dest-grid" id="destGrid"><article class="dest-card" data-name="termales santa rosa de cabal" data-type="aguas termales, naturaleza y descanso">
+      <div class="dest-img"><img src="assets/termales-santa-rosa-1.webp" alt="Termales Santa Rosa de Cabal" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Santa Rosa de Cabal, Risaralda · Aguas termales, naturaleza y descanso</p><h3>Termales Santa Rosa de Cabal</h3><p>Pasadía al Ecoparque o alojamiento, según el plan; piscinas termales, entorno natural y cascadas.</p>
+      <div class="mini"><span>📍 Km 10, vereda San Ramón</span><span>⏰ 6:30 a. m. – 11:30 p. m.</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Pasadía al Ecoparque o alojamiento, según el plan; piscinas termales, entorno natural y cascadas.</p>
+        <h4>¿Qué no incluye?</h4><p>Alimentación, servicios o experiencias no expresamente incluidos en el plan.</p>
+        <h4>Recomendaciones</h4><p>Lleva traje de baño, toalla, bloqueador e impermeable ligero. Si buscas más tranquilidad, considera alojamiento.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20termales-santa-rosa-de-cabal" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="parque del café" data-type="cultura cafetera, atracciones y diversión">
+      <div class="dest-img"><img src="assets/parque-del-cafe-1.webp" alt="Parque del Café" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Montenegro, Quindío · Cultura cafetera, atracciones y diversión</p><h3>Parque del Café</h3><p>Pasaporte según categoría; atracciones y atractivos culturales incluidos de acuerdo con el pasaporte adquirido.</p>
+      <div class="mini"><span>📍 Km 6 vía Montenegro – Pueblo Tapao</span><span>⏰ Consultar programación vigente</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Pasaporte según categoría; atracciones y atractivos culturales incluidos de acuerdo con el pasaporte adquirido.</p>
+        <h4>¿Qué no incluye?</h4><p>Alimentos, bebidas, parqueadero y servicios adicionales no incluidos.</p>
+        <h4>Recomendaciones</h4><p>Llega temprano y revisa restricciones de estatura, programación y atracciones prioritarias.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20parque-del-caf" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="panaca" data-type="animales, campo colombiano, naturaleza y aventura">
+      <div class="dest-img"><img src="assets/panaca-1.webp" alt="PANACA" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Quimbaya, Quindío · Animales, campo colombiano, naturaleza y aventura</p><h3>PANACA</h3><p>Pasaporte PANACA con estaciones temáticas, Aulas Vivas y presentaciones; Pasaporte Campo amplía la experiencia a 2 días.</p>
+      <div class="mini"><span>📍 Km 7 vía Quimbaya – Montenegro, Vereda Kerman</span><span>⏰ 10:00 a. m. – 4:00 p. m. según programación</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Pasaporte PANACA con estaciones temáticas, Aulas Vivas y presentaciones; Pasaporte Campo amplía la experiencia a 2 días.</p>
+        <h4>¿Qué no incluye?</h4><p>Actividades adicionales o servicios no incluidos en el pasaporte elegido.</p>
+        <h4>Recomendaciones</h4><p>Calzado cómodo, sombrero, bloqueador y protección para lluvia. Consulta la programación antes de viajar.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20panaca" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="bioparque ukumarí" data-type="fauna, conservación, naturaleza y educación">
+      <div class="dest-img"><img src="assets/ukumari-1.webp" alt="Bioparque Ukumarí" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Pereira, Risaralda · Fauna, conservación, naturaleza y educación</p><h3>Bioparque Ukumarí</h3><p>Recorrido por Sabana Africana, Bosques Andinos, Matecaña y experiencias educativas, sujeto a programación.</p>
+      <div class="mini"><span>📍 Km 14 vía Pereira – Cerritos, entrada por Estación de Servicio Santa Bárbara</span><span>⏰ Ingreso 9:00 a. m. – 2:30 p. m.; permanencia hasta 4:30 p. m.</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Recorrido por Sabana Africana, Bosques Andinos, Matecaña y experiencias educativas, sujeto a programación.</p>
+        <h4>¿Qué no incluye?</h4><p>Alimentos y bebidas, servicios adicionales y actividades con tarifa independiente.</p>
+        <h4>Recomendaciones</h4><p>Lleva calzado cómodo, hidratación y tiempo suficiente para recorrer el bioparque.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20bioparque-ukumar" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="termales san vicente" data-type="aguas termales, bosque de niebla y bienestar">
+      <div class="dest-img"><img src="assets/san-vicente-1.webp" alt="Termales San Vicente" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Santa Rosa de Cabal, Risaralda · Aguas termales, bosque de niebla y bienestar</p><h3>Termales San Vicente</h3><p>Experiencias termales, río termal natural, terma de burbujas y espacios de bienestar; algunos pasaportes incluyen alimentación.</p>
+      <div class="mini"><span>📍 Vereda Potreros</span><span>⏰ Según experiencia y programación</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Experiencias termales, río termal natural, terma de burbujas y espacios de bienestar; algunos pasaportes incluyen alimentación.</p>
+        <h4>¿Qué no incluye?</h4><p>Servicios o experiencias no incluidos en el pasaporte seleccionado.</p>
+        <h4>Recomendaciones</h4><p>Planifica el desplazamiento, lleva traje de baño y calzado cómodo; confirma requisitos del plan.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20termales-san-vicente" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="las bailarinas" data-type="agua, naturaleza, aventura y diversión">
+      <div class="dest-img"><img src="assets/las-bailarinas-1.webp" alt="Las Bailarinas" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Montenegro, Quindío · Agua, naturaleza, aventura y diversión</p><h3>Las Bailarinas</h3><p>Piscinas, toboganes, cascadas, senderos, túnel, muro de escalar, miradores y otras experiencias incluidas en el pasaporte.</p>
+      <div class="mini"><span>📍 Vía Armenia–Montenegro, salida 2, sector El Jalón, 2 km, vereda Santa Rita</span><span>⏰ 9:00 a. m. – 5:00 p. m.</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Piscinas, toboganes, cascadas, senderos, túnel, muro de escalar, miradores y otras experiencias incluidas en el pasaporte.</p>
+        <h4>¿Qué no incluye?</h4><p>Actividades extremas con tarifa independiente; alimentación y parqueadero, salvo que el plan indique lo contrario.</p>
+        <h4>Recomendaciones</h4><p>Lleva traje de baño, toalla, muda, bloqueador y protege tus dispositivos del agua.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20las-bailarinas" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="recuca" data-type="cultura cafetera, tradición y naturaleza">
+      <div class="dest-img"><img src="assets/recuca-1.webp" alt="RECUCA" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Calarcá, Quindío · Cultura cafetera, tradición y naturaleza</p><h3>RECUCA</h3><p>Tour del Café con recorrido, recolección, atuendos tradicionales y proceso del café; otras experiencias según pasaporte.</p>
+      <div class="mini"><span>📍 Vereda Callelarga, corregimiento de Barcelona</span><span>⏰ Aprox. 9:00 a. m. – 3:00 p. m.</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Tour del Café con recorrido, recolección, atuendos tradicionales y proceso del café; otras experiencias según pasaporte.</p>
+        <h4>¿Qué no incluye?</h4><p>Alimentación, transporte y experiencias adicionales no incluidas.</p>
+        <h4>Recomendaciones</h4><p>Llega temprano, usa ropa y calzado cómodos y considera impermeable.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20recuca" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="parque los arrieros" data-type="cultura, tradición, naturaleza y aventura">
+      <div class="dest-img"><img src="assets/los-arrieros-1.webp" alt="Parque Los Arrieros" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Quindío · Cultura, tradición, naturaleza y aventura</p><h3>Parque Los Arrieros</h3><p>Recorrido por estaciones, cultura arriera, presentaciones, senderos, animales y experiencias tradicionales.</p>
+      <div class="mini"><span>📍 Km 3 vía Montenegro – Quimbaya</span><span>⏰ 9:00 a. m. – 6:00 p. m.</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Recorrido por estaciones, cultura arriera, presentaciones, senderos, animales y experiencias tradicionales.</p>
+        <h4>¿Qué no incluye?</h4><p>Alimentación, compras, transporte y actividades con tarifa independiente.</p>
+        <h4>Recomendaciones</h4><p>Reserva tiempo suficiente para presentaciones; sigue las indicaciones del personal.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20parque-los-arrieros" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="laberinto mil caminos" data-type="aventura, naturaleza, reto y conexión">
+      <div class="dest-img"><img src="assets/laberinto-1.webp" alt="Laberinto Mil Caminos" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Quimbaya, Quindío · Aventura, naturaleza, reto y conexión</p><h3>Laberinto Mil Caminos</h3><p>Acceso al laberinto vegetal, caminos internos, miradores y recorrido autoguiado; parqueadero gratuito.</p>
+      <div class="mini"><span>📍 Km 6, vereda Morelia Alta, vía Quimbaya</span><span>⏰ 9:00 a. m. – 5:00 p. m. (referencia)</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Acceso al laberinto vegetal, caminos internos, miradores y recorrido autoguiado; parqueadero gratuito.</p>
+        <h4>¿Qué no incluye?</h4><p>Alimentación y bebidas no permitidas salvo excepciones indicadas; actividades adicionales si aplican.</p>
+        <h4>Recomendaciones</h4><p>Calzado cómodo, hidratación, bloqueador y tiempo suficiente para explorar sin afán.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20laberinto-mil-caminos" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="catedral de sal de zipaquirá" data-type="historia, arte, arquitectura y experiencia subterránea">
+      <div class="dest-img"><img src="assets/catedral-1.webp" alt="Catedral de Sal de Zipaquirá" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Zipaquirá, Cundinamarca · Historia, arte, arquitectura y experiencia subterránea</p><h3>Catedral de Sal de Zipaquirá</h3><p>Pasaporte según selección; el Básico contempla ingreso, audioguía, mapping, tren de salida, museos y recorridos indicados.</p>
+      <div class="mini"><span>📍 Calle 1 con Carrera 6, Parque de la Sal</span><span>⏰ 9:00 a. m. – 4:40 p. m. (referencia)</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Pasaporte según selección; el Básico contempla ingreso, audioguía, mapping, tren de salida, museos y recorridos indicados.</p>
+        <h4>¿Qué no incluye?</h4><p>Experiencias adicionales como Ruta del Minero, muro de escalar o city tour pueden requerir otro pasaporte.</p>
+        <h4>Recomendaciones</h4><p>Usa calzado cómodo y reserva varias horas para disfrutar el recorrido.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20catedral-de-sal-de-zipaquir" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article>
+<article class="dest-card" data-name="mundo aventura" data-type="adrenalina, diversión, familia y aventura">
+      <div class="dest-img"><img src="assets/mundo-aventura-1.webp" alt="Mundo Aventura" loading="lazy"><span class="badge">Punto de venta autorizado</span></div>
+      <div class="dest-body"><p class="eyebrow">Bogotá · Adrenalina, diversión, familia y aventura</p><h3>Mundo Aventura</h3><p>Pasaportes Gold, Silver o Kids según estatura y experiencia; atracciones sujetas a operación.</p>
+      <div class="mini"><span>📍 Cra. 71D # 1-14 Sur</span><span>⏰ Según día y programación</span></div>
+      <details><summary>Ver información del destino</summary><div class="details">
+        <h4>¿Qué incluye?</h4><p>Pasaportes Gold, Silver o Kids según estatura y experiencia; atracciones sujetas a operación.</p>
+        <h4>¿Qué no incluye?</h4><p>Atracciones, servicios o experiencias no incluidos en el pasaporte; alimentación y parqueadero.</p>
+        <h4>Recomendaciones</h4><p>Revisa estaturas y estado de atracciones antes de ir; llega temprano en días de alta afluencia.</p>
+        <p class="note">Los horarios, disponibilidad, pasaportes y condiciones pueden cambiar. Confirmamos la opción vigente antes de tu compra.</p>
+      </div></details>
+      <a class="btn btn-small" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20mundo-aventura" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+    </article></div></div></section>
+<section class="process" id="como-funciona"><div class="container"><div class="section-head"><div><div class="eyebrow">Compra sin complicarte</div><h2>Del interés a la reserva.</h2></div><p>La experiencia está diseñada para reducir dudas, errores y fricción antes de que entregues tu dinero.</p></div><div class="process-grid"><div class="process-card"><div class="num">01</div><h3>Descubre</h3><p>Explora destinos y encuentra información concreta, no promesas genéricas.</p></div><div class="process-card"><div class="num">02</div><h3>Filtra</h3><p>Compara según fecha, grupo, edades, intereses, presupuesto y restricciones.</p></div><div class="process-card"><div class="num">03</div><h3>Cotiza</h3><p>Escríbenos por WhatsApp con los datos de tu viaje y te orientamos.</p></div><div class="process-card"><div class="num">04</div><h3>Compra</h3><p>Confirma la opción elegida y recibe la información correspondiente a tu reserva.</p></div></div></div></section>
+<section class="why" id="confianza"><div class="container"><div class="section-head"><div><div class="eyebrow">Pensado para compradores exigentes</div><h2>Menos incertidumbre. Más tranquilidad.</h2></div><p>Una compra turística no debería convertirse en una fuente de estrés. La claridad es parte del servicio.</p></div><div class="why-grid"><div class="why-card"><h3>🛡️ Seguridad y respaldo</h3><p>Te explicamos el proceso, las condiciones y lo que recibirás antes de avanzar.</p></div><div class="why-card"><h3>🧭 Recomendación útil</h3><p>No todos los pasaportes sirven para todos los grupos. Te ayudamos a identificar la opción adecuada.</p></div><div class="why-card"><h3>📲 Atención por WhatsApp</h3><p>Un canal directo para resolver preguntas, solicitar cotizaciones y avanzar con tu compra.</p></div></div></div></section>
+<section class="cta"><div class="container cta-inner"><div><div class="kicker">¿Ya tienes fecha?</div><h2>Hagamos que empiece aquí.</h2><p>Envíanos fecha, número de personas y destino de interés. Si viajan niños, indícanos sus edades y estaturas cuando sean relevantes.</p></div><a class="btn gold" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20QUIERO%20COTIZAR" target="_blank">Quiero cotizar</a></div></section>
+</main>
+<footer><div class="container footer-grid"><div><strong>PUNTO DE VENTA AUTORIZADO</strong><br><small>Tu destino comienza en un solo lugar.</small></div><div><small>WhatsApp 333 221 2644 · Colombia</small></div></div></footer>
+<a class="wa-float" href="https://wa.me/573332212644?text=Hola%21%0ADeseo%20obtener%20mayor%20informacion%20acerca%20de%20los%20planes%20en%20INFORMACION%20GENERAL" target="_blank" rel="noopener">WhatsApp · Cotizar</a>
+<script>
+const filters=document.querySelectorAll('.filter'); const cards=[...document.querySelectorAll('.dest-card')];
+const map={all:'all',termales:'termales',parques:'parques',cultura:'cultura',naturaleza:'naturaleza',aventura:'aventura'};
+const types={'termales-santa-rosa':['termales','naturaleza'],'parque-del-cafe':['parques','cultura','aventura'],'panaca':['parques','naturaleza','aventura'],'ukumari':['naturaleza','parques'],'san-vicente':['termales','naturaleza'],'las-bailarinas':['parques','aventura','naturaleza'],'recuca':['cultura','naturaleza'],'los-arrieros':['cultura','parques','naturaleza'],'laberinto':['naturaleza','aventura'],'catedral':['cultura'],'mundo-aventura':['parques','aventura']};
+filters.forEach(b=>b.addEventListener('click',()=>{filters.forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;cards.forEach(c=>{const key=c.querySelector('h3').textContent;const slug=Object.keys(types).find(s=>c.querySelector('h3').textContent.toLowerCase().includes(s.replaceAll('-',' ')))||''; const ok=f==='all'||(types[slug]||[]).includes(f); c.style.display=ok?'block':'none';})}));
+</script>
+</body></html>
